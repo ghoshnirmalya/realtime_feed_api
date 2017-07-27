@@ -36,5 +36,7 @@ defmodule RealtimeFeedApi.Endpoint do
     key: "_realtime_feed_api_key",
     signing_salt: "961RM9u6"
 
+  plug CORSPlug
+
   plug RealtimeFeedApi.Router
 end
